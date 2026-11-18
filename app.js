@@ -110,12 +110,13 @@
   var bar = $('.progress i'), top = $('#top'), parEls = $$('[data-par]');
   var links = $$('.nav a[href^="#"]:not(.cta-mini)');
   var secs = links.map(function(a){ return $(a.getAttribute('href')); });
-  var lastY = 0, ticking = false;
+  var lastY = 0, ticking = false, toTop = $('#toTop');
 
   function frame(){
     ticking = false;
     var y = window.scrollY, h = document.documentElement.scrollHeight - innerHeight, vh = innerHeight;
     bar.style.transform = 'scaleX(' + (h>0 ? y/h : 0) + ')';
+    if(toTop) toTop.classList.toggle('show', y > vh*0.8);
     top.classList.toggle('solid', y > 30);
     top.classList.toggle('hide', y > 300 && y > lastY + 4 && !nav.classList.contains('open'));
     if(y < lastY - 4 || y < 300) top.classList.remove('hide');
