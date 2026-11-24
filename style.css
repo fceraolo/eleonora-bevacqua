@@ -69,7 +69,8 @@ h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.15;letter-spacin
 .logo-svg .ln{transition:stroke .5s}
 .eyebrow{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--sage-deep);margin-bottom:14px}
 .hero h1{font-size:clamp(40px,7.4vw,84px);margin-bottom:18px}
-.hero h1 span{font-style:italic;color:var(--sage-deep)}
+.hero h1 .nome{color:var(--sage-deep)}
+.hero h1 .cognome{font-style:italic;color:var(--ink)}
 .lead{font-size:clamp(17px,2vw,21px);color:var(--mute);max-width:600px;margin:0 auto 32px}
 .hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 26px;border-radius:99px;text-decoration:none;font-size:16px;border:1.5px solid transparent;transition:transform .25s var(--ease),background .25s,color .25s,border-color .25s,box-shadow .25s;cursor:pointer;text-align:center}
@@ -230,6 +231,10 @@ h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.15;letter-spacin
 /* titoli professionali: niente maiuscolo forzato, PhD resta PhD */
 .titoli{text-transform:none!important;letter-spacing:.06em!important}
 .eyebrow.titoli{font-size:16px}
+
+/* testo fermo (richiesta della dottoressa 24/11): niente comparsa del testo */
+.rise,.reveal{opacity:1!important;transform:none!important;transition:none!important}
+.words .w{opacity:1!important}
 
 /* reveal */
 .reveal{opacity:0;transform:translateY(34px);transition:opacity .9s ease,transform .9s var(--ease)}
