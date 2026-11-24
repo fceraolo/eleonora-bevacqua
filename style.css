@@ -122,7 +122,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.15;letter-spacin
 .card:hover::before{opacity:.7;transform:scale(1)}
 .card>*{position:relative}
 .num{font-family:var(--serif);font-style:italic;color:var(--clay);font-size:20px}
-.card h3{font-size:clamp(22px,2.3vw,27px);margin:22px 0 10px}
+.card h3{font-size:clamp(22px,2.3vw,27px);margin:0 0 10px}
 .card p{font-size:15.5px;color:var(--mute)}
 
 .how{background:var(--sage-deep);color:#f4efe9}
@@ -169,6 +169,8 @@ h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.15;letter-spacin
 
 .contact{text-align:center;background:radial-gradient(90% 90% at 50% 100%,var(--sage-soft),var(--cream))}
 .contact h2,.contact .sub{margin-left:auto;margin-right:auto}
+.contact .eyebrow{margin-bottom:26px}
+.sec.contact{padding:clamp(60px,8vw,100px) 0}
 .contact-btns{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
 .note{margin-top:34px;font-size:14px;color:var(--mute)}
 
@@ -216,6 +218,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.15;letter-spacin
 .pubs a .j::after{content:" ↗";color:var(--sage-deep)}
 
 /* galleria dello studio */
+.where .gallery{margin-top:22px}
 .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
 .gallery figure{border-radius:22px;overflow:hidden;aspect-ratio:3/4;background:var(--sage-soft);box-shadow:0 24px 40px -30px rgba(43,42,40,.55)}
 .gallery img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
